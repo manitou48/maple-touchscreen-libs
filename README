@@ -1,0 +1,22 @@
+Adafruit's 2.8" TFT touchscreen
+  http://www.adafruit.com/products/335
+  http://www.ladyada.net/products/tfttouchbreakout/
+
+touchscreen additions to sei's maple code, described here
+ http://forums.leaflabs.com/topic.php?id=1755
+with his original code here
+  https://gist.github.com/2728041
+
+modified Arduino version of touchscreen library code to work with maple.
+  adjust analogRead() code to use 12-bit values
+ as with Arduino, shared some pins
+ board pins: D7-D0              ym xm yp xp bklite RST RD WR CD CS 3/5 GND
+       maple 7 6 13 4 11 10 9 8                     15 16 17 18
+
+did not make changes to sei's code, but library and examples are
+structured so that you could put them in your maple sketchbook 
+libraries/ directory
+ besides graphicstest example, added rotationtest,tftpaint, touchscreendemo
+
+
+
