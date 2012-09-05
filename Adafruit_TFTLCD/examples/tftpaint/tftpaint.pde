@@ -9,10 +9,10 @@
 #define YM 9   // can be a digital pin
 #define XP 8   // can be a digital pin
 
-#define TS_MINX 650
-#define TS_MINY 630
-#define TS_MAXX 3400
-#define TS_MAXY 3600
+#define TS_MINX 635
+#define TS_MINY 309
+#define TS_MAXX 3600
+#define TS_MAXY 3700
 
 // For better pressure precision, we need to know the resistance
 // between X+ and X- Use any multimeter to read it
@@ -102,9 +102,9 @@ void loop()
 
   if (p.z > MINPRESSURE && p.z < MAXPRESSURE) {
     /*
-    SerialUSB.print("X = "); Serial.print(p.x);
-    SerialUSB.print("\tY = "); Serial.print(p.y);
-    SerialUSB.print("\tPressure = "); Serial.println(p.z);
+    SerialUSB.print("X = "); SerialUSB.print(p.x);
+    SerialUSB.print("\tY = "); SerialUSB.print(p.y);
+    SerialUSB.print("\tPressure = "); SerialUSB.println(p.z);
     */
     
     digitalWrite(13, HIGH);    // LED on, pen down
