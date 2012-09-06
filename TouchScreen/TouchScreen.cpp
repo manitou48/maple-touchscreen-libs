@@ -12,7 +12,6 @@
 // 3+ uses insert sort to get the median value.
 // We found 2 is precise yet not too slow so we suggest sticking with it!
 
-// for maple, 1 sample ok, though 2 and ignore the first might be better
 
 #define NUMSAMPLES 2
 

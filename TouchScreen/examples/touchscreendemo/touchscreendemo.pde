@@ -30,5 +30,5 @@ void loop(void) {
      SerialUSB.print("\tPressure = "); SerialUSB.println(p.z);
   }
 
-  delay(100);
+  delay(1);   // 1ms better results for maple
 }
